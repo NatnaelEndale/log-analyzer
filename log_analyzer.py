@@ -61,7 +61,7 @@ def detection(parsed):
         status = parsed.get("status")
         if "HTTP" in web_log:
             event_type = "HTTP_REQUEST"
-            end_point = re.search(r"/\w+", web_log).group()
+            end_point = re.search(r"/\w+", web_log).group() # This line needs correction
         if (status == "401" or status == "403") and end_point == "/admin":
             risk = "MEDIUM"
         else:
@@ -128,7 +128,7 @@ data_to_analyze = analyze_ip(json_file)
 def rank_ip(data_list):
     ranked_ip = {}
     for ip, r_rank in data_list[1].items():
-        rank = r_rank / data_to_analyze[0][ip]
+        rank = r_rank / data_list[0][ip]
         ranked_ip[ip] = rank
     return ranked_ip
 
