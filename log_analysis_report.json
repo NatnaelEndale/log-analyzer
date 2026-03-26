@@ -1,0 +1,15 @@
+{"ip": "192.168.1.1", "event_type": "FAILED_LOGIN", "risk": "MEDIUM"}
+{"ip": "192.168.1.1", "event_type": "FAILED_LOGIN", "risk": "MEDIUM"}
+{"ip": "10.0.0.5", "event_type": "SUCCESS_LOGIN", "risk": "LOW"}
+{"ip": "192.168.1.1", "event_type": "FAILED_LOGIN", "risk": "MEDIUM"}
+{"ip": "203.0.113.45", "subtype": "INVALID_USER", "event_type": "FAILED_LOGIN", "risk": "HIGH"}
+{"ip": "10.0.0.8", "event_type": "SUCCESS_LOGIN", "risk": "LOW"}
+{"ip": "192.168.1.1", "event_type": "FAILED_LOGIN", "risk": "MEDIUM"}
+{"ip": "192.168.1.1", "endpoint": "/admin", "status_code": "401", "event_type": "HTTP_REQUEST", "risk": "MEDIUM"}
+{"ip": "192.168.1.1", "endpoint": "/login", "status_code": "200", "event_type": "HTTP_REQUEST", "risk": "LOW"}
+{"ip": "203.0.113.45", "endpoint": "/login", "status_code": "403", "event_type": "HTTP_REQUEST", "risk": "LOW"}
+{"ip": "198.51.100.23", "endpoint": "/dashboard", "status_code": "200", "event_type": "HTTP_REQUEST", "risk": "LOW"}
+{"ip": "192.168.1.1", "endpoint": "/admin", "status_code": "401", "event_type": "HTTP_REQUEST", "risk": "MEDIUM"}
+{"ip": null, "message": "Started Session 101 of user root.", "event_type": "SYSTEM_LOG", "risk": "LOW"}
+{"ip": null, "message": "Failed to start MySQL Database Service.", "event_type": "SYSTEM_ERROR", "risk": "HIGH"}
+{"ip": null, "message": "Started Session 102 of user admin.", "event_type": "SYSTEM_LOG", "risk": "LOW"}
