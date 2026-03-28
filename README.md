@@ -65,9 +65,9 @@ Run the analyzer on your log files:
 Output will be stored in `output/log_analysis_report.json`
 
 Example Output (NDJSON)<br/>
-`{"ip": "192.168.1.1", "event_type": "FAILED_LOGIN", "subtype": "INVALID_USER", "risk": "HIGH"}<br/>
-{"ip": "192.168.1.2", "event_type": "HTTP_REQUEST", "endpoint": "/admin", "status_code": "403", "risk": "MEDIUM"}<br/>
-{"ip": "127.0.0.1", "event_type": "SYSTEM_ERROR", "message": "Failed to start service", "risk": "HIGH"}<br/>`
+`{"ip": "192.168.1.1", "event_type": "FAILED_LOGIN", "subtype": "INVALID_USER", "risk": "HIGH"}`<br/>
+`{"ip": "192.168.1.2", "event_type": "HTTP_REQUEST", "endpoint": "/admin", "status_code": "403", "risk": "MEDIUM"}`<br/>
+`{"ip": "127.0.0.1", "event_type": "SYSTEM_ERROR", "message": "Failed to start service", "risk": "HIGH"}`<br/>
 ## 💡 How It Works
 
 Parsing: Reads log files and extracts relevant fields (IP, status, login event, system message, web request).<br/>
