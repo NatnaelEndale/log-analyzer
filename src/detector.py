@@ -73,7 +73,7 @@ class Detection:
             self.update_risk("HIGH")
         else:
             self.update_event("SYSTEM_LOG", 0)
-            self.update_risk("HIGH")
+            self.update_risk("LOW")
 
         self.detected_log["message"] = message
 
