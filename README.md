@@ -43,51 +43,57 @@ log-analyzer/<br/>
 
 1. Clone the repository:
 
-bash 
+`bash<br/>
 git clone https://github.com/NatnaelEndale/log-analyzer.git
-cd log-analyzer
+cd log-analyzer`
 
 2. Create a virtual environment (recommended):
-python -m venv venv
-source venv/bin/activate       # Linux / Mac
-venv\Scripts\activate          # Windows
 
-Install dependencies:
-pip install -r requirements.txt
+python -m venv venv<br/>
+source venv/bin/activate       # Linux / Mac<br/>
+venv\Scripts\activate          # Windows<br/>
 
-⚡ Usage
+Install dependencies:<br/>
+`pip install -r requirements.txt`
+
+## ⚡ Usage
 
 Run the analyzer on your log files:
 
-python main.py --log-file logs/auth_sample.log
+`python main.py --log-file logs/auth_sample.log`
 
-Output will be stored in output/log_analysis_report.json
+Output will be stored in `output/log_analysis_report.json`
 
 Example Output (NDJSON)
-{"ip": "192.168.1.1", "event_type": "FAILED_LOGIN", "subtype": "INVALID_USER", "risk": "HIGH"}
-{"ip": "192.168.1.2", "event_type": "HTTP_REQUEST", "endpoint": "/admin", "status_code": "403", "risk": "MEDIUM"}
-{"ip": "127.0.0.1", "event_type": "SYSTEM_ERROR", "message": "Failed to start service", "risk": "HIGH"}
-💡 How It Works
-Parsing: Reads log files and extracts relevant fields (IP, status, login event, system message, web request).
-Detection: Classifies each event into predefined types and calculates risk.
-Analysis: Aggregates events by IP and ranks suspicious activity.
-Reporting: Outputs a structured JSON report for further analysis.
-🏗️ Future Improvements
-Support for more log formats (CSV, JSON, Apache/Nginx logs).
-CLI interface with filters and options for interactive use.
-Integration with alerting systems (email, Slack, etc.).
-Visualization dashboards for easier monitoring.
-📚 Learning Outcomes
-Python OOP: modular design and class-based structure.
-Regex mastery for parsing logs efficiently.
-Risk-based event classification logic.
-NDJSON formatting and JSON handling.
-Basic cybersecurity awareness via log monitoring.
-👨‍💻 Author
+{"ip": "192.168.1.1", "event_type": "FAILED_LOGIN", "subtype": "INVALID_USER", "risk": "HIGH"}<br/>
+{"ip": "192.168.1.2", "event_type": "HTTP_REQUEST", "endpoint": "/admin", "status_code": "403", "risk": "MEDIUM"}<br/>
+{"ip": "127.0.0.1", "event_type": "SYSTEM_ERROR", "message": "Failed to start service", "risk": "HIGH"}<br/>
+## 💡 How It Works
+
+Parsing: Reads log files and extracts relevant fields (IP, status, login event, system message, web request).<br/>
+Detection: Classifies each event into predefined types and calculates risk.<br/>
+Analysis: Aggregates events by IP and ranks suspicious activity.<br/>
+Reporting: Outputs a structured JSON report for further analysis.<br/>
+
+## 🏗️ Future Improvements
+
+Support for more log formats (CSV, JSON, Apache/Nginx logs).<br/>
+CLI interface with filters and options for interactive use.<br/>
+Integration with alerting systems (email, Slack, etc.).<br/>
+Visualization dashboards for easier monitoring.<br/>
+
+## 📚 Learning Outcomes
+Python OOP: modular design and class-based structure.<br/>
+Regex mastery for parsing logs efficiently.<br/>
+Risk-based event classification logic.<br/>
+NDJSON formatting and JSON handling.<br/>
+Basic cybersecurity awareness via log monitoring.<br/>
+
+## 👨‍💻 Author
 
 Natnael Endale – GitHub Profile
 
-📄 License
+## 📄 License
 
 This project is open-source and licensed under the MIT License.
 
