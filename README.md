@@ -43,13 +43,13 @@ log-analyzer/<br/>
 
 1. Clone the repository:
 
-`bash<br/>
-git clone https://github.com/NatnaelEndale/log-analyzer.git
-cd log-analyzer`
+`bash`<br/>
+`git clone https://github.com/NatnaelEndale/log-analyzer.git`<br/>
+`cd log-analyzer`
 
 2. Create a virtual environment (recommended):
 
-`python -m venv venv<br/>`
+`python -m venv venv<`<br/>
 `source venv/bin/activate`       # Linux / Mac<br/>
 `venv\Scripts\activate`          # Windows<br/>
 
