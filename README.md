@@ -21,20 +21,21 @@ This project parses, classifies, and analyzes system, authentication, and web lo
 ---
 
 ## 📂 Project Structure
-log-analyzer/
-├── logs/ # Sample log files
-│ └── auth_sample.log
-├── output/ # Output directory (stores analysis results)
-│ └── .gitkeep
-├── src/ # Source code
-│ ├── analyzer.py
-│ ├── detector.py
-│ ├── parser.py
-│ ├── pipeline.py
-│ └── report.py
-├── main.py # Entry point for running the analyzer
-├── requirements.txt # Python dependencies
-└── README.md
+
+log-analyzer/<br/>
+├── logs/ # Sample log files<br/>
+│ └── auth_sample.log<br/>
+├── output/ # Output directory (stores analysis results)<br/>
+│ └── .gitkeep<br/>
+├── src/ # Source code<br/>
+│ ├── analyzer.py<br/>
+│ ├── detector.py<br/>
+│ ├── parser.py<br/>
+│ ├── pipeline.py<br/>
+│ └── report.py<br/>
+├── main.py # Entry point for running the analyzer<br/>
+├── requirements.txt # Python dependencies<br/>
+└── README.md<br/>
 
 ---
 
