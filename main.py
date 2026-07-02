@@ -6,6 +6,7 @@ def main():
     parser_object = Parser()
     result_list = parser_object.parsing(log_file_path)
     pipe_object = Pipeline(log_file_path, json_file_path)
+    pipe_object.store_to_json()
     analyzer_object = Analyzer(json_file_path)
     report_object = Report(json_file_path)
     report_object.report()

@@ -28,7 +28,7 @@ class Parser():
 
                 web_request = re.search(r'"(.*?)"', line)
                 if web_request:
-                    activity_record["system_event"] = web_request.group()
+                    activity_record["web_request"] = web_request.group() # Here, I captured a bug, I wrote "system_event" instead of "web_request" in the previous version.
 
                 system_log = re.search(r"(?<=systemd\[\d\]:\s).*", line)
                 if system_log:
@@ -36,21 +36,4 @@ class Parser():
 
                 self.activity_records_list.append(activity_record)
         return self.activity_records_list
-
-
-
-#file_path = "/home/natty/python-projects/myproject/log-analyzers/logs/auth_sample.log"
-
-#parser_object = Parser()
-
-#result_list = parser_object.parsing(file_path)
-
-#print(result_list)
-
-
-
-
-
-
-
 
