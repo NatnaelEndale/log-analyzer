@@ -82,6 +82,7 @@ class Detection:
         authentication = self.parsed.get("login_event")
         web_log = self.parsed.get("web_request")
         system_log = self.parsed.get("system_event")
+        time_stamp = self.parsed.get("time_stamp")
 
         if authentication:
             self.auth_process(authentication)
@@ -94,6 +95,7 @@ class Detection:
 
         self.detected_log["event_type"] = self.event_type or "UNKNOWN"
         self.detected_log["risk"] = self.risk or "LOW"
+        self.detected_log["time_stamp"] = time_stamp
 
         return self.detected_log
 

@@ -34,6 +34,10 @@ class Parser():
                 if system_log:
                     activity_record["system_event"] = system_log.group()
 
+                time_stamp = re.search(r"(\w{3}\s\d{1,2}\s\d{2}:\d{2}:\d{2})", line)
+                if time_stamp:
+                    activity_record["time_stamp"] = time_stamp.group() or None
+
                 self.activity_records_list.append(activity_record)
         return self.activity_records_list
 
