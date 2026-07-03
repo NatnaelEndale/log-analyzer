@@ -28,7 +28,7 @@ class Parser():
 
                 web_request = re.search(r'"(.*?)"', line)
                 if web_request:
-                    activity_record["web_request"] = web_request.group() # Here, I captured a bug, I wrote "system_event" instead of "web_request" in the previous version.
+                    activity_record["web_request"] = web_request.group(1) # Here, I captured a bug, I wrote "system_event" instead of "web_request" in the previous version.
 
                 system_log = re.search(r"(?<=systemd\[\d\]:\s).*", line)
                 if system_log:
