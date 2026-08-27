@@ -35,3 +35,9 @@ class Analyzer():
             self.ranked_ip[ip] = rank
         return self.ranked_ip
 
+    def top_suspicious(self):
+        sorted_ips = sorted(self.ip_risk.items(), key=lambda x: x[1], reverse=True)
+        return sorted_ips
+
+
+
