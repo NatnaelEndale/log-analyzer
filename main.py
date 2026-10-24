@@ -8,7 +8,7 @@ def main():
     current_dir = Path(__file__).parent
     json_file_path = current_dir/"results"/"report.json"
     parser = argparse.ArgumentParser(description= "A Log Analyzer")
-    subparsers = parser.add_subparsers(dest= "command", help= "Available commands.")
+    subparsers = parser.add_subparsers(dest= "command", required= True,help= "Available commands.")
 
     analyze_parser = subparsers.add_parser("analyze", help= "Perform a log analysis in the specified log file.")
     analyze_parser.add_argument("log_file", help= "A log file to Analyze.")
@@ -37,7 +37,7 @@ def main():
         if not input_path.is_file():
             raise FileNotFoundError(f"Input file not found: {input_path}")
 
-        report_object = Report(json_file_path)
+        report_object = Report(input_path)
         report_object.report()
         report_object.summary()
         report_object.top_susp_ips()
