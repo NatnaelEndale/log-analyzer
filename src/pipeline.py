@@ -1,3 +1,4 @@
+from pathlib import Path
 import json
 from .parser import Parser
 from .detector import Detection
@@ -9,13 +10,18 @@ class Pipeline():
         self.file_to_write = file_name
 
     def store_to_json(self):
+        output_path = Path(self.file_to_write)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        if not output_path.parent.exists():
+            raise FileNotFoundError(f"Output directory not found: {output_path.parent}")
+
         with open(self.file_to_write, "w") as f:
             for data in self.data_list:
                 detector = Detection(data)
                 detected = detector.process()
                 json.dump(detected, f)
                 f.write("\n")
-            print("The Json file is written succefully!")
+        print("The Json file is written succefully!")
 
 
 

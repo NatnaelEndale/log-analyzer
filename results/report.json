@@ -1,0 +1,15 @@
+{"ip": "192.168.1.1", "event_type": "FAILED_LOGIN", "risk": "HIGH", "time_stamp": "Mar 18 10:22:01"}
+{"ip": "192.168.1.1", "event_type": "FAILED_LOGIN", "risk": "HIGH", "time_stamp": "Mar 18 10:22:05"}
+{"ip": "10.0.0.5", "event_type": "SUCCESS_LOGIN", "risk": "LOW", "time_stamp": "Mar 18 10:22:10"}
+{"ip": "192.168.1.1", "event_type": "FAILED_LOGIN", "risk": "HIGH", "time_stamp": "Mar 18 10:23:15"}
+{"ip": "203.0.113.45", "subtype": "INVALID_USER", "event_type": "FAILED_LOGIN", "risk": "HIGH", "time_stamp": "Mar 18 10:24:20"}
+{"ip": "10.0.0.8", "event_type": "SUCCESS_LOGIN", "risk": "LOW", "time_stamp": "Mar 18 10:25:01"}
+{"ip": "192.168.1.1", "event_type": "FAILED_LOGIN", "risk": "HIGH", "time_stamp": "Mar 18 10:26:45"}
+{"ip": "192.168.1.1", "status_code": "401", "endpoint": "/admin", "event_type": "HTTP_REQUEST", "risk": "MEDIUM", "time_stamp": "Mar 18 11:00:01"}
+{"ip": "192.168.1.1", "status_code": "200", "endpoint": "/login", "event_type": "HTTP_REQUEST", "risk": "LOW", "time_stamp": "Mar 18 11:00:05"}
+{"ip": "203.0.113.45", "status_code": "403", "endpoint": "/login", "event_type": "HTTP_REQUEST", "risk": "LOW", "time_stamp": "Mar 18 11:01:10"}
+{"ip": "198.51.100.23", "status_code": "200", "endpoint": "/dashboard", "event_type": "HTTP_REQUEST", "risk": "LOW", "time_stamp": "Mar 18 11:02:15"}
+{"ip": "192.168.1.1", "status_code": "401", "endpoint": "/admin", "event_type": "HTTP_REQUEST", "risk": "MEDIUM", "time_stamp": "Mar 18 11:03:20"}
+{"ip": null, "message": "Started Session 101 of user root.", "event_type": "SYSTEM_LOG", "risk": "LOW", "time_stamp": "Mar 18 12:10:01"}
+{"ip": null, "message": "Failed to start MySQL Database Service.", "event_type": "SYSTEM_ERROR", "risk": "HIGH", "time_stamp": "Mar 18 12:15:42"}
+{"ip": null, "message": "Started Session 102 of user admin.", "event_type": "SYSTEM_LOG", "risk": "LOW", "time_stamp": "Mar 18 12:16:00"}
